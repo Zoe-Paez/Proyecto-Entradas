@@ -1,0 +1,93 @@
+body {									/*Le indico que todo lo que esta dentro de body quede centrado, con tipografia calibri y fondo claro de la pagina */
+    font-family: Calibri, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;				
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {								/* Pongo tipografia Verdana para cumplir con lo pedido en la pac */
+    font-family: Verdana, sans-serif;
+}
+img {									/* Acomodo la imagen a las epecificaciones pedidas */
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#descrip, #fechas, #formulario { /*Fondo blanco en cada caja, ademas redondo del recuadro*/
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px; 
+    margin: 20px 0;
+	margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table {			/*Bordes y color de las filas*/
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc; 
+}
+tr:nth-child(odd) {
+    background-color: #f9f9f9; 
+}
+tr:nth-child(even) {
+    background-color: #ffffff; 
+}
+input, select { /* Redondeo de bordes y espaciado para que quede prolijo*/
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#metodosPago label { 
+    display: inline-block;  /* Hace que los botones de radio estén uno al lado del otro */
+    margin-right: 20px;      /* Espacio entre los botones */
+}
+
+#terminos {
+    display: inline-block;
+    margin-left: 0;          /* Lo coloca contra el borde izquierdo */
+    padding-left: 0;         /* Ajuste de espaciado */
+}
+button {  /*Color al boton de continuar*/
+    background-color: #007bff; /*Color azul*/
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {/*cambia color cuando pasa el mouse*/
+    background-color: #0056b3; 
+}
+
+#resultado {   /*TRABAJO SOBRE LA PAG DE CONFIRMACION, MISMO DISEÑO DE FONDO Y BORDES REDONDEADOS PARA SEGUIR LA LINEA GENERAL DE LA PAG*/
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}

@@ -1,0 +1,116 @@
+<!DoCtype html>
+<html>	
+<head>
+		<meta charset="utf-8">
+		<title>Compra de entradas - Lali</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script src="js/formulario.js" defer></script>
+</head>
+<body>
+		<h1> Lali Esposito 🤟🏼 </h1>
+		<img src="img/GRUPO.jpg" alt="EN ESTADIO VELEZ EL 30 DE ABRIL">
+		<br><br>
+		
+	<div id="descrip">
+		<h2> Sobre LALI </h2>
+		<p>Artista Argentina, reconocida mundialmente. Con tan solo 33 años esta rompiendo todos los esquemas y ahora el Estadio Velez Sarfield...</p>
+	</div>
+	
+	<div id="fechas">
+		<h2> Fechas disponibles de concierto </h2>
+		<table>
+			<tr>
+				<th> FECHA</th>
+				<th> LUGAR </th>
+				<th> HORA </th>
+				<th> PRECIO </th>
+			</tr>
+			<tr>
+				<td>2025-05-24</td>
+				<td>Buenos Aires</td>
+				<td>20:00</td>
+				<td>$75000</td>
+			</tr>
+			<tr>
+				<td>2025-05-25</td>
+				<td>Buenos Aires</td>
+				<td>20:00</td>
+				<td>$75000</td>
+			</tr>
+			<tr>
+				<td>2025-09-06</td>
+				<td>Buenos Aires</td>
+				<td>21:00</td>
+				<td>$75000</td>
+			</tr>
+		</table>
+	</div>
+	
+	
+		<h2> Compra tus entradas </h2>
+		
+	<form id="formulario">
+		<fieldset>
+		<legend> DATOS PERSONALES </legend>
+		<br>
+		<label for="nombre"> Nombre y Apellido: </label> <input type="text" id="usuario" name="usuario"/>
+		</fieldset>
+  
+	<br><br>
+  
+		<fieldset>
+		<legend> DETALLES </legend>
+		
+		<br>
+		
+		<label for="fecha"> Fecha: </label> <input type="date" id="fecha" name="fecha"/>
+		
+		<br> <br>
+		
+		<label for="Lugar"> Lugar:</label>
+		<select id="lugar" name="lugar">
+		<option value="Buenos Aires"> BUENOS AIRES</option>
+		</select>
+		
+		<br>
+			
+		<label for="cant"> Cantidad de entradas: </label>		
+		<select id="cant" name="cant">
+		<option value="1 (UNA)">1 ENTRADA(S) </option>
+		<option value="2 (DOS)">2 ENTRADA(S) </option>
+		<option value="3 (TRES)">3 ENTRADA(S) </option>
+		<option value="4 (CUATRO)">4 ENTRADA(S) </option>
+		<option value="5 (CINCO)">5 ENTRADA(S) </option>
+		</select>
+	
+		<br><br>
+	
+		<label for="ubi"> Ubicación: </label>
+		<select id="ubi" name="ubi">
+		<option value="GENERAL"> GENERAL </option>
+		<option value="PLANTA BAJA"> PLATEA BAJA </option>
+		<option value="PLANTA ALTA"> PLATEA ALTA </option>
+		</select>
+		</fieldset>
+
+		<br><br>
+
+	<fieldset>
+		<legend> MÉTODOS DE PAGO </legend>
+
+	<div id="metodosPago">
+		<label for="tarjeta"> <input type="radio" name="metodo" value="TARJETA"> Tarjeta </label>
+		<label for="transferencia"> <input type="radio" name="metodo" value="TRANSFERENCIA"> Transferencia </label>
+		<label for="PayPal"> <input type="radio" name="metodo" value="PAYPAL"> PayPal </label>
+	</div>	
+	</fieldset>
+
+	<br><br>
+	<fieldset>
+		<label for="checkbox"> <input type="checkbox" id="terminos" name="terminos" value="aceptaterminos"> Acepto Termino de USOS y CONDICIONES </label>
+		<br><br>
+	</fieldset>
+	<button type="button" onclick="enviarDatos()">Continuar</button>
+</form>
+	</body>
+	</html>
